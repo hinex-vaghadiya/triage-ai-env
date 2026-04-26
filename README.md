@@ -19,7 +19,7 @@ pinned: false
 | Deliverable | Link |
 |---|---|
 | **Live Environment** | [🚀 Hugging Face Space](https://huggingface.co/spaces/hinex-07/triage-ai-env) |
-| **Blog / Writeup** | [📝 Blog.MD](Blog.MD) |
+| **Blog / Writeup** | [📝 Blog.md](Blog.md) |
 | **Training Notebook** | [📓 Colab Notebook (Kaggle/Unsloth + TRL)](https://colab.research.google.com/drive/1zC5-DEDIiBHxBbhQJ4LNFa-iLvHIugl0?usp=sharing) |
 | **Training Script** | [🐍 triage_train.py](training/triage_train.py) |
 | **Code Repository** | [💻 GitHub](https://github.com/hinex-vaghadiya/triage-ai-env) |
@@ -219,7 +219,7 @@ triage-ai-env/
 ├── inference.py             # Baseline inference with [START]/[STEP]/[END] logging
 ├── openenv.yaml             # OpenEnv manifest
 ├── Dockerfile               # Container definition
-├── Blog.MD                  # Writeup / mini-blog
+├── Blog.md                  # Writeup / mini-blog
 ├── training_curves.png      # Before vs After comparison plot
 ├── loss_curve.png           # SFT training loss curve
 ├── reward_curve.png         # Post-training reward curve
