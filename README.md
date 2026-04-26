@@ -20,7 +20,7 @@ pinned: false
 |---|---|
 | **Live Environment** | [🚀 Hugging Face Space](https://huggingface.co/spaces/hinex-07/triage-ai-env) |
 | **Blog / Writeup** | [📝 Blog.MD](Blog.MD) |
-| **Training Notebook** | [📓 Colab Notebook (Kaggle/Unsloth + TRL)](training/triage_ai_grpo.ipynb) |
+| **Training Notebook** | [📓 Colab Notebook (Kaggle/Unsloth + TRL)](https://colab.research.google.com/drive/1zC5-DEDIiBHxBbhQJ4LNFa-iLvHIugl0?usp=sharing) |
 | **Training Script** | [🐍 triage_train.py](training/triage_train.py) |
 | **Code Repository** | [💻 GitHub](https://github.com/hinex-vaghadiya/triage-ai-env) |
 
@@ -118,12 +118,16 @@ The training script connects directly to the live TriageAI environment on HF Spa
 
 ### Before vs After Training
 
-| Metric | Before (Baseline Qwen 3B) | After (SFT-Trained) | Change |
-|---|---|---|---|
-| **Composite Score (Easy)** | 0.446 | 0.609 | **+36% improvement** |
-| **Survival Rate (Easy)** | 25% | 50% | **Doubled** |
+| Task | Metric | Before (Baseline Qwen 3B) | After (SFT-Trained) | Change | % Improve |
+|---|---|---|---|---|---|
+| **task_easy** | Score | 0.448 | 0.656 | +0.208 | **46.38%** |
+| | Survival | 0.250 | 0.583 | +0.333 | **133.33%** |
+| **task_medium** | Score | 0.518 | 0.638 | +0.120 | **23.16%** |
+| | Survival | 0.286 | 0.429 | +0.143 | **50.02%** |
+| **task_hard** | Score | 0.535 | 0.608 | +0.073 | **13.72%** |
+| | Survival | 0.200 | 0.267 | +0.067 | **33.33%** |
 
-The untrained model killed 3 out of 4 patients on the easy task. The trained model kept half of them alive — and on individual runs, sometimes achieved 75% survival.
+On the easy task, the survival rate jumped from a dismal 25% to nearly 60% — a massive 133% relative improvement. The model also showed consistent, undeniable improvements in survival and composite score across all difficulty levels.
 
 More importantly, the *behavior* changed qualitatively:
 - **Before:** The model would triage a patient, then immediately triage the next one, then the next — never actually assigning beds or treating anyone. Patients deteriorated and died while it was still "assessing."

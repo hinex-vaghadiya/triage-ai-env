@@ -58,10 +58,16 @@ One thing worth noting: the training script talks directly to the live environme
 
 The numbers tell the story:
 
-| | Before Training | After Training |
-|---|---|---|
-| **Composite Score** | 0.446 | 0.609 |
-| **Survival Rate** | 25% (1 out of 4 survived) | 50% (2 out of 4 survived) |
+| Task | Metric | Before (Baseline Qwen 3B) | After (SFT-Trained) | Change | % Improve |
+|---|---|---|---|---|---|
+| **task_easy** | Score | 0.448 | 0.656 | +0.208 | **46.38%** |
+| | Survival | 0.250 | 0.583 | +0.333 | **133.33%** |
+| **task_medium** | Score | 0.518 | 0.638 | +0.120 | **23.16%** |
+| | Survival | 0.286 | 0.429 | +0.143 | **50.02%** |
+| **task_hard** | Score | 0.535 | 0.608 | +0.073 | **13.72%** |
+| | Survival | 0.200 | 0.267 | +0.067 | **33.33%** |
+
+On the easy task, the survival rate jumped from a dismal 25% to nearly 60% — a massive 133% relative improvement. The model also showed consistent, undeniable improvements in survival and composite score across all difficulty levels.
 
 But the numbers don't capture the behavioral shift.
 
@@ -93,7 +99,7 @@ We think environments like TriageAI — ones that force models to make hard trad
 
 The environment is live, public, and completely free to use: [https://huggingface.co/spaces/hinex-07/triage-ai-env](https://huggingface.co/spaces/hinex-07/triage-ai-env)
 
-If you want to try training your own model on it, the notebook is here: [training/triage_ai_grpo.ipynb](training/triage_ai_grpo.ipynb)
+If you want to try training your own model on it, the notebook is here: [training/triage_ai_grpo.ipynb](https://colab.research.google.com/drive/1zC5-DEDIiBHxBbhQJ4LNFa-iLvHIugl0?usp=sharing)
 
 We'd love to see what a 7B or 14B model can do with more training budget. We bet it can hit 80%+ survival.
 
