@@ -16,7 +16,7 @@ pinned: false
 - **Hugging Face Space:** [hinex-07/triage-ai-env](https://huggingface.co/spaces/hinex-07/triage-ai-env) *(Please view the live Space here)*
 - **Story & Writeup:** [Read the full Blog.MD here](Blog.MD)
 - **Training Notebook:** [Colab Notebook](training/triage_ai_grpo.ipynb)
-- **Code Repository:** [GitHub Repo](https://github.com/hinex-vaghadiya/openenv-data-cleaning)
+- **Code Repository:** [GitHub Repo](https://github.com/hinex-vaghadiya/triage-ai-env)
 
 ---
 
