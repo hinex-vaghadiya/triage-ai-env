@@ -99,7 +99,7 @@ We think environments like TriageAI — ones that force models to make hard trad
 
 The environment is live, public, and completely free to use: [https://huggingface.co/spaces/hinex-07/triage-ai-env](https://huggingface.co/spaces/hinex-07/triage-ai-env)
 
-If you want to try training your own model on it, the notebook is here: [training/triage_ai_grpo.ipynb](https://colab.research.google.com/drive/1zC5-DEDIiBHxBbhQJ4LNFa-iLvHIugl0?usp=sharing)
+If you want to try training your own model on it, the notebook is here: [training/triage_ai_grpo.ipynb](https://colab.research.google.com/drive/1shBJFYCjYFaYycbBDK1AsUEFr6Vykhxs?usp=sharing)
 
 The full source code for the environment and the training scripts is available on GitHub: [https://github.com/hinex-vaghadiya/triage-ai-env](https://github.com/hinex-vaghadiya/triage-ai-env)
 

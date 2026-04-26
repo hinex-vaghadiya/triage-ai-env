@@ -20,7 +20,7 @@ pinned: false
 |---|---|
 | **Live Environment** | [🚀 Hugging Face Space](https://huggingface.co/spaces/hinex-07/triage-ai-env) |
 | **Blog / Writeup** | [📝 Blog.md](Blog.md) |
-| **Training Notebook** | [📓 Google Colab Notebook(Unsloth + TRL)](https://colab.research.google.com/drive/1zC5-DEDIiBHxBbhQJ4LNFa-iLvHIugl0?usp=sharing) |
+| **Training Notebook** | [📓 Google Colab Notebook(Unsloth + TRL)](https://colab.research.google.com/drive/1shBJFYCjYFaYycbBDK1AsUEFr6Vykhxs?usp=sharing) |
 | **Training Script** | [🐍 triage_train.py](training/triage_train.py) |
 | **Code Repository** | [💻 GitHub](https://github.com/hinex-vaghadiya/triage-ai-env) |
 
