@@ -1,0 +1,26 @@
+name: triage-ai
+version: 1.0.0
+description: "TriageAI — Emergency Room Crisis Simulator"
+theme: "Wild Card (Theme 5)"
+author: "Team Block Dragon"
+
+environment:
+  type: step-based
+  tasks:
+    - task_easy
+    - task_medium
+    - task_hard
+  actions:
+    - triage
+    - assign_bed
+    - assign_doctor
+    - order_treatment
+    - send_to_or
+    - discharge
+    - reassess
+    - submit
+
+deployment:
+  platform: huggingface-spaces
+  runtime: docker
+  port: 7860

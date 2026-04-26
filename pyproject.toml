@@ -1,0 +1,17 @@
+[project]
+name = "triage-ai"
+version = "1.0.0"
+description = "TriageAI — Emergency Room Crisis Simulator. An OpenEnv-compliant RL environment for training LLMs on medical triage under resource constraints."
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi>=0.104.0",
+    "uvicorn>=0.24.0",
+    "pydantic>=2.0.0",
+    "requests>=2.31.0",
+    "openai>=1.6.0",
+    "openenv-core>=0.2.0",
+]
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
