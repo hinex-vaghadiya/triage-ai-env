@@ -246,6 +246,7 @@ def main():
 
         training_args = GRPOConfig(
             output_dir=OUTPUT_DIR,
+            report_to="wandb",
             num_train_epochs=1,
             per_device_train_batch_size=1,
             gradient_accumulation_steps=4,
