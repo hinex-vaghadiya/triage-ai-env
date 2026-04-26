@@ -121,11 +121,11 @@ The training script connects directly to the live TriageAI environment on HF Spa
 | Task | Metric | Before (Baseline Qwen 3B) | After (SFT-Trained) | Change | % Improve |
 |---|---|---|---|---|---|
 | **task_easy** | Score | 0.448 | 0.656 | +0.208 | **46.38%** |
-| | Survival | 0.250 | 0.583 | +0.333 | **133.33%** |
+| **task_easy** | Survival | 0.250 | 0.583 | +0.333 | **133.33%** |
 | **task_medium** | Score | 0.518 | 0.638 | +0.120 | **23.16%** |
-| | Survival | 0.286 | 0.429 | +0.143 | **50.02%** |
+| **task_medium** | Survival | 0.286 | 0.429 | +0.143 | **50.02%** |
 | **task_hard** | Score | 0.535 | 0.608 | +0.073 | **13.72%** |
-| | Survival | 0.200 | 0.267 | +0.067 | **33.33%** |
+| **task_hard** | Survival | 0.200 | 0.267 | +0.067 | **33.33%** |
 
 On the easy task, the survival rate jumped from a dismal 25% to nearly 60% — a massive 133% relative improvement. The model also showed consistent, undeniable improvements in survival and composite score across all difficulty levels.
 
