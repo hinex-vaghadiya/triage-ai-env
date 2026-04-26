@@ -101,6 +101,8 @@ The environment is live, public, and completely free to use: [https://huggingfac
 
 If you want to try training your own model on it, the notebook is here: [training/triage_ai_grpo.ipynb](https://colab.research.google.com/drive/1zC5-DEDIiBHxBbhQJ4LNFa-iLvHIugl0?usp=sharing)
 
+The full source code for the environment and the training scripts is available on GitHub: [https://github.com/hinex-vaghadiya/triage-ai-env](https://github.com/hinex-vaghadiya/triage-ai-env)
+
 We'd love to see what a 7B or 14B model can do with more training budget. We bet it can hit 80%+ survival.
 
 ---
